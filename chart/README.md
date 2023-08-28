@@ -1,8 +1,8 @@
 # project-operator-cop
 
-![Version: 0.1.6](https://img.shields.io/badge/Version-0.1.6-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v0.1.6](https://img.shields.io/badge/AppVersion-v0.1.6-informational?style=flat-square)
+![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v0.1.0](https://img.shields.io/badge/AppVersion-v0.1.0-informational?style=flat-square)
 
-A Helm chart for https://github.com/sap/project-operator-cop
+A Helm chart for https://github.com/zdenko-kovac/project-operator-cop
 
 ## Values
 
@@ -11,7 +11,7 @@ A Helm chart for https://github.com/sap/project-operator-cop
 | fullnameOverride | string | `""` | Override full name |
 | nameOverride | string | `""` | Override name |
 | replicaCount | int | `1` | Replica count |
-| image.repository | string | `"ghcr.io/sap/project-operator-cop"` | Image repository |
+| image.repository | string | `"ghcr.io/zdenko-kovac/project-operator-cop"` | Image repository |
 | image.tag | string | `""` | Image tag (defauls to .Chart.AppVersion) |
 | image.pullPolicy | string | `"IfNotPresent"` | Image pull policy |
 | imagePullSecrets | list | `[]` | Image pull secrets |
