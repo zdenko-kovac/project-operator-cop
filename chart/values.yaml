@@ -8,7 +8,7 @@ replicaCount: 1
 
 image:
   # -- Image repository
-  repository: ghcr.io/sap/project-operator-cop
+  repository: ghcr.io/zdenko-kovac/project-operator-cop
   # -- Image tag (defauls to .Chart.AppVersion)
   tag: ""
   # -- Image pull policy

@@ -130,5 +130,5 @@ envtest: setup-envtest
 update-content: ## Update external resources used by this repository.
 	rm -rf pkg/operator/data/charts
 	mkdir -p pkg/operator/data/charts
-	helm fetch oci://ghcr.io/sap/project-operator-helm/project-operator --untar --untardir pkg/operator/data/charts
+	helm fetch oci://ghcr.io/zdenko-kovac/project-operator-helm/project-operator --untar --untardir pkg/operator/data/charts
 	rm -f pkg/operator/data/charts/*/*.tgz

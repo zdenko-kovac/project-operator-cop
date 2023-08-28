@@ -158,7 +158,7 @@ jobs:
         echo "sha=$sha" >> $GITHUB_OUTPUT
 
     - name: Wait for check suites to complete
-      uses: sap-contributions/await-check-suites@master
+      uses: zdenko-kovac/await-check-suites@master
       with:
         ref: ${{ steps.get_target_commit.outputs.sha }}
         intervalSeconds: 10
@@ -175,4 +175,3 @@ jobs:
         target_commitish: ${{ steps.get_target_commit.outputs.sha }}
         token: ${{ secrets.WORKFLOW_USER_GH_TOKEN }}
         generate_release_notes: false
-
