@@ -158,7 +158,7 @@ jobs:
         echo "sha=$sha" >> $GITHUB_OUTPUT
 
     - name: Wait for check suites to complete
-      uses: zdenko-kovac/await-check-suites@master
+      uses: sap-contributions/await-check-suites@upgrade_to_node_20
       with:
         ref: ${{ steps.get_target_commit.outputs.sha }}
         intervalSeconds: 10
